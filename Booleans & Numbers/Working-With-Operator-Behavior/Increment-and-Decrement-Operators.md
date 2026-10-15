@@ -30,5 +30,31 @@ let y = 5;
 console.log(y++); // 5
 console.log(y); // 6
 //In this example, y++ means "use y first, then increment it". When you log y++, you get 5, but y becomes 6 after that line of code
+```
+
+## The Decrement Operator
+Does the same thing but decreases the value by 1, following the same pre and postfixes
+```javascript
+let x = 5;
+console.log(--x); // 4
+console.log(x); // 4
+
+let y = 5;
+console.log(y--); // 5
+console.log(y); // 4
+```
 
 
+## So Which Pre or Postfix do you use?
+In many cases, doesnt matter. Both get the job done. 
+However, if you're using the value immediately in an expression, the difference becomes important. Let's take a look at this example:
+
+```javascript
+let a = 5;
+let b = ++a;
+console.log(b); // 6 (a was incremented before assignment)
+
+let c = 5;
+let d = c++;
+console.log(d); // 5 (c was incremented after assignment)
+```
